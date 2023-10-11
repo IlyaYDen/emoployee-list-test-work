@@ -1,0 +1,11 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/employee_db</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">admin</property>
+        <mapping class="main.java.Employee"/>
+    </session-factory>
+</hibernate-configuration>
